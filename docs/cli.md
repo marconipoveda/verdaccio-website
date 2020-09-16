@@ -45,7 +45,7 @@ Environment Info:
 
 ### Default config file location
 
-To locate the home directory on Linux/MacOS enviroments, we rely on **$XDG_DATA_HOME** as the first choice and on Windows environments we look for [APPDATA environment variable](https://www.howtogeek.com/318177/what-is-the-appdata-folder-in-windows/).
+To locate the home directory on Linux/MacOS environments, we rely on **$XDG_DATA_HOME** as the first choice and on Windows environments we look for [APPDATA environment variable](https://www.howtogeek.com/318177/what-is-the-appdata-folder-in-windows/).
 
 ### Config file format
 
@@ -53,11 +53,11 @@ Config file should be YAML, JSON or NodeJS module. YAML format is detected by pa
 
 ### Default storage location
 
-We use **$XDG_DATA_HOME** environment variable as default to locate the storage by default which [should be the same](https://askubuntu.com/questions/538526/is-home-local-share-the-default-value-for-xdg-data-home-in-ubuntu-14-04) as $HOME/.local/share.
+We use **$XDG_DATA_HOME** environment variable as default to locate the storage by default which [should be the same](https://askubuntu.com/questions/538526/is-home-local-share-the-default-value-for-xdg-data-home-in-ubuntu-14-04) as ` $HOME/.local/share`.
 If you are using custom storage, this location is irrelevant.
 
-### Default database file location
+### Default database file location and name
 
 The default database file location is in the storage location.
-Starting with version 4.0.0, new Verdaccio installations will use `.verdaccio-db.json` as database file extension.
-When upgrading an existing Verdaccio server, the database file extension will remain as `.sinopia-db.json`.
+Starting with version 4.0.0, new Verdaccio installations will use `.verdaccio-db.json` as database filename.
+When upgrading an existing Verdaccio server, the database filename will remain as `.sinopia-db.json`.
