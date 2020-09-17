@@ -19,7 +19,7 @@ Define the HTTP port on which Verdaccio will run. If you don't use it, the defau
 
 ### `--config, -c`
 
-Points to a configuration file you need to use. If you don't use it, the default config file is located in **~/.local/verdaccio/config.yaml**.
+Points to a configuration file you need to use. If you don't use it, the default config file is located in `~/.config/verdaccio/config.yaml`.
 
 ### `--info, -i`
 
